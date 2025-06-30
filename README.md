@@ -17,6 +17,7 @@ Golden Plix is a retro-styled, pixel-themed web game inspired by Flappy Bird. Ta
 
 ## How to Play
 
+- Acess the link here:- https://achilles-glitch.github.io/Golden-Plix/
 - **Tap or click** to make Plix jump
 - Avoid the pipes
 - Survive as long as possible
