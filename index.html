@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Golden Plix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+    <div id="homeScreen" class="screen">
+      <h1>Golden Plix</h1>
+      <button onclick="showDifficulty()">Play</button>
+    </div>
+
+    <div id="difficultyScreen" class="screen" style="display:none">
+      <h2>Select Difficulty</h2>
+      <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('medium')">Medium</button>
+      <button onclick="startGame('hard')">Hard</button>
+    </div>
+
+    <div id="gameOverScreen" class="screen" style="display:none">
+      <h2>Game Over</h2>
+      <p id="finalScore">Score: 0</p>
+      <button onclick="restartGame()">Restart</button>
+      <button onclick="goHome()">Home</button>
+    </div>
+
+    <div id="countdownScreen" class="screen" style="display:none">
+      <h2 id="countdownText">3</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
